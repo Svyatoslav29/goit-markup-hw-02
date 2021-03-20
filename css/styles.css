@@ -28,9 +28,11 @@
     color: var(--main-text-color);
   }
   
+
   .link,
   .webstudio,
-  .link-head-adress {
+  .link-head-adress,
+  .address {
       text-decoration: none;
       color: inherit;
   }
@@ -53,6 +55,32 @@
   .list {
       list-style: none;
   }
+
+ /* секция навиг */
+
+ .link-nav,
+ .link-nav-active,
+ .link-adress-title-footer,
+ .link-adress-map-footer  {
+    text-decoration: none;
+    color: inherit;
+ }
+ .link-nav,
+ .link-nav-active {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+ }
+ .link-nav-active {
+     color: var(--accent-color);
+ }
+
+.link-nav:focus,
+.link-nav:hover {
+    color: var(--accent-color);
+}
 
 /* кнопки */
 
@@ -144,74 +172,9 @@ color: var(--title-color);
     color: var(--main-text-color);
   }
 
-/* секция адреса */
+  /* мейн секшн студия */
 
-  .adress-title-footer {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-  }
-  
-  .first-main-sec,
-  .footer-sec {
-      background-color: var(--dark-bg-color);
-  }
-
-  .web,
-  .studio,
-  .studio-foot {
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.192;
-    letter-spacing: 0.03em;
-    color: var(--accent-color);
-  }
-
-  .studio {
-    color: var(--title-color);
-  }
-
-  .studio-foot {
-    color: var(--bg-text-color);   
-  }
-
- /* секция навиг */
-
- .link-nav,
- .link-nav-active,
- .link-adress-title-footer,
- .link-adress-map-footer  {
-    text-decoration: none;
-    color: inherit;
- }
- .link-nav,
- .link-nav-active {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--title-color);
- }
- .link-nav-active {
-     color: var(--accent-color);
- }
- /* секция футера */
-
- .link-adress-title-footer,
- .link-adress-map-footer {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);  
- }
- .link-adress-map-footer {
-     color: var(--white-bg-color);
- }
- 
- .main-sec-advantages-text {
+  .main-sec-advantages-text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -243,3 +206,64 @@ color: var(--title-color);
     letter-spacing: 0.03em;
     color: var(--main-text-color);
  }
+
+
+ /* секция футера */
+
+ /* секция адреса */
+
+ .adress-title-footer {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .first-main-sec,
+  .footer-sec {
+      background-color: var(--dark-bg-color);
+  }
+
+  .web,
+  .studio,
+  .studio-foot {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+  }
+
+  .studio {
+    color: var(--title-color);
+  }
+
+  .studio-foot {
+    color: var(--bg-text-color);   
+  }
+
+ .address {
+    text-decoration: none;
+    color: inherit;    
+    font-style: inherit;
+  }
+
+ .link-adress-title-footer,
+ .link-adress-map-footer {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);  
+ }
+ .link-adress-map-footer {
+     color: var(--white-bg-color);
+ }
+ 
+.link-adress-title-footer:hover,
+.link-adress-title-footer:focus,
+.link-adress-map-footer:focus,
+.link-adress-map-footer:hover {
+    color: var(--accent-color);
+}
